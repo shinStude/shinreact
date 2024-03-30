@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import Clock from './chapter_04/Clock';
 import CommentList from './chapter_05/CommentList';
-
+import NotificationList from './capter_06/NotificationList';
 
 
 const root = document.getElementById('root');
 
   ReactDOM.render(
     <React.StrictMode>
-      <CommentList />
+      <NotificationList />
     </React.StrictMode>,
     root
   );
