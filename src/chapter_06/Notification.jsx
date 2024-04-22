@@ -20,16 +20,27 @@ class Notification extends React.Component {
         super(props);
 
         this.state = {};
-
     }
+
+    componentDidMount() {
+        console.log(`${this.props.id} componentDidMount() called.`);
+    }
+
+    componentDidUpdate() {
+        console.log(`${this.props.id} componentDidUpdate() called.`);
+    }
+
+    componentWillUnmount() {
+        console.log(`${this.props.id} componentWillUnmount() called.`);
+    }
+
     render() {
         return (
             <div style={styles.wrapper}>
-            <span style={styles.messageText}>{this.props.message}</span>
+                <span style={styles.messageText}>{this.props.message}</span>
             </div>
-
-            );
+        );
     }
 }
 
-export default Notification
+export default Notification;
